@@ -1,0 +1,8 @@
+#### Generated directories
+node_modules
+
+#### Hidden files
+.env
+
+#### lock files
+package-lock.json
