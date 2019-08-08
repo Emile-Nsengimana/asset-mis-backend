@@ -1,0 +1,1058 @@
+body{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+label{
+    font-size: 13pt;
+    font-weight: 400;
+    color: rgb(8, 65, 92);
+    font-family: sans-serif;
+    padding: 10px;
+    flex: 1;
+}
+.profile img{
+    width: 10%;
+}
+i{
+    padding: 12px;
+    margin: 0;
+}
+button{
+    color: rgb(8, 65, 92);
+}
+.active{
+    background: rgb(8, 65, 92);
+    color: rgb(255, 255, 255)
+}
+.inactive{
+    color: rgb(128, 28, 28);
+}
+.dormant{
+    color: rgb(148, 156, 25);
+}
+/* ============================================== NAVBAR =========================== */
+.nav{
+    width: 99.5;
+    box-shadow: 0 4px 7px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+}
+.nav img{
+    margin-left: 100px;
+    outline: none;
+}
+
+#menu-toggle{
+    outline: none;
+    display: none;
+    margin: 30px -75px 30px 30px;
+    float: left;
+    border-radius: 100px; 
+    padding: 10px;
+    width:30px;
+    background: rgba(8, 65, 92, 0.7);
+}
+#menu-toggle:hover{
+    background: rgba(8, 65, 92, 1);
+    cursor: pointer;
+}
+.toggle{
+    display: block;
+}
+
+/* ============================================== BODY =========================== */
+
+.overall{
+    display: flex
+}
+.content{
+    width: 29%;
+}
+.info{
+    margin-top: 70px;
+    width: 65%;
+    z-index: -1;
+}
+.info li{
+    font-size: 22pt;
+    list-style: none;
+    padding: 10px;
+    text-align: center;
+    background: rgb(46, 14, 46);
+    color: antiquewhite;
+ }
+ .info h1{
+     font-size: 45pt;
+     text-align: center;
+     margin-top: 0;
+     color: rgb(8, 65, 92);
+ }
+.form-group{
+    padding-bottom: 10px;
+    display: flex;
+    margin: auto;
+}
+.aside .fas{
+    padding-top: 7px;
+}
+#signin .fas{
+    padding-top: 17px;
+    color: rgb(8, 65, 92);
+}
+.inp{
+    height: 30px;
+    text-align: center;
+    border: none;
+    border-bottom: 0.5px solid rgba(117, 156, 123, 0.7);
+    outline: none;
+    font-weight: 500;
+    font-size: 13pt;
+    flex: 3;
+    margin-right: 55px;
+}
+.txt{
+    height: 30px;
+    text-align: center;
+    border: none;
+    border-bottom: 0.5px solid rgba(117, 156, 123, 0.7);
+    outline: none;
+    font-weight: 500;
+    font-size: 13pt;
+    flex: 3;
+    padding: 0;
+}
+#signin{
+    display: block;
+    width: 30%;
+    top: 110px;
+    height: 48vh;
+    text-align: right;
+    position: absolute;
+    top: 170px;
+    border-radius: 8px;
+    padding-top: 5px;
+    box-shadow: 2px 4px 10px 0 rgba(0, 0, 0, 0.4), 1px 3px 3px 0 rgba(0, 0, 0, 0.3);
+}
+#signin h1,
+#signup h1,
+#staff h1,
+#modal-reset h1,
+#modal-search h1,
+#modal-account h1,
+#modal-view-account h1,
+#modal-add-user h1{
+    text-align: center;
+    color: rgb(8, 65, 92);
+    font-size: 24pt;
+}
+#change-password .form-group, #profile-info .form-group {
+    width: 70%;
+    text-align: justify;
+    text-align: right;
+    margin: auto;
+}
+.dv-double-btn{
+    margin-right: 139px;
+    float: right;
+    width: 50%;
+}
+.dv-double-btn .btn-danger{
+    width: 25%;
+}
+.dv-double-btn .btn-success{
+    width: 45%;
+}
+#profile-admin .form-group, #change-password label{
+    padding-bottom: 0px;
+}
+#profile-admin label{
+    font-weight: 700;
+}
+#staff{
+    margin-top: 80px;
+    display: none;
+    height: 40vh;
+    position: relative;
+    top: -55px;
+    z-index: 1;
+}
+.btn-all{
+    width: 80%;
+    height: 30px;
+    border: none;
+    font-weight: bold;
+    font-size: 15pt;
+    margin: 10px;
+    border-radius: 3px;
+    color: rgb(8, 65, 92);
+    outline: none;
+    cursor: pointer;
+    outline: none !important;
+}
+
+.btn-all:hover{
+    background: transparent;
+    color: rgba(46, 14, 46, 0.8);
+}
+.btn-link{
+    border: none;
+    background: transparent;
+    outline: none;
+    cursor: pointer;
+    font-size: 11pt;
+    font-weight: 700;
+    color: cadetblue;
+    padding: 0;
+    margin: 0;
+}
+.btn-signup{
+    margin-left: 10%;
+    width: 40%;
+    background: rgba(46, 14, 46, 0.8);
+    color: white;
+}
+.btn-signin{
+    width: 40%;
+    margin-left: 10%;
+    margin-right: 10%;
+    background: rgba(46, 14, 46, 0.2);
+}
+.btn-signin:hover{
+    background: rgba(46, 14, 46, 0.8);
+    color: white;
+}
+.btn-emphasis{
+    background: rgb(192, 216, 192);
+    margin-left: 55%;
+}
+.btn-staff{
+    margin: auto;
+}
+.link-default h5{
+    display: inline;
+    font-size: 11pt;
+    font-weight: 700;
+    color: rgb(117, 117, 117);
+}
+.link-default{
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+/* ============================================== SIGN UP =========================== */
+#signup{
+    display: none;
+    position: absolute;
+    width: 40%;
+    top: 130px;
+    height: 64vh;
+    z-index: 1;
+    text-align: right;
+    border-radius: 8px;
+    padding-top: 45px;
+    margin-right: 120px;
+    margin-left: -120px;
+    background: white;
+    box-shadow: 2px 4px 10px 0 rgba(0, 0, 0, 0.4), 1px 3px 3px 0 rgba(0, 0, 0, 0.3);
+}
+#signup .form-group{
+    padding-bottom: 10px;
+    width: 50%;
+    float: left;
+    display: block;
+}
+#signup .btn-emphasis{
+    background: rgb(192, 216, 192);
+    width: 80%;
+    margin: 10%;
+}
+#signup label{
+    padding-top: 10px;
+    padding-bottom: 0;
+    padding-left: 15px;
+    text-align: left;
+}
+
+#signup .inp{
+    height: 30px;
+    text-align: center;
+    border: none;
+    border-bottom: 0.5px solid rgba(117, 156, 123, 0.7);
+    outline: none;
+    font-weight: 500;
+    font-size: 13pt;
+    width: 90%;
+    margin-right: 10px;
+}
+#signup h1{
+    padding: 0;
+    margin-top: -10px;
+}
+.link-mid{
+    text-align: center;
+    margin: 0;
+}
+.link-mid h4{
+    text-align: center;
+    display: inline;
+    font-weight: 700;
+    color: rgb(117, 117, 117);
+}
+/* ============================================== MODAL PASSWORD RESET ===================== */
+#modal-reset{
+    display: none;
+    width: 40%;
+    background: white;
+    position: fixed;
+    top: 30%;
+    left: 30%;
+    border-radius: 12px;
+    box-shadow: 2px 4px 10px 0 rgba(0, 0, 0, 0.4), 1px 3px 3px 0 rgba(0, 0, 0, 0.3);
+}
+#close,
+#close-search,
+#close-account,
+#close-add-user{
+    float: right;
+    margin: 14px;
+    font-weight: bold;
+    font-size: 18pt;
+    color: rgb(175, 35, 35);
+    cursor: pointer;
+    background: rgb(218, 221, 210);
+    border-radius: 10rem;
+    width: 30px;
+    text-align: center;
+}
+.hide{
+    display: none;
+}
+.btn-simple{
+    margin-left: 40% !important;
+    display: block;
+    width: 30%;
+    border: none;
+    font-weight: 700;
+    padding: 0;
+    margin: auto;
+    border-radius: 3px;
+    outline: none;
+    cursor: pointer;
+    text-align: center;
+}
+#hide{
+    margin-right: 14px;
+    font-weight: bold;
+    font-size: 15pt;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    background: rgb(218, 221, 210);
+    width: 100%;
+    text-align: center;
+    padding: 0;
+}
+#close:hover{
+    color: rgb(255, 255, 255);
+    background: rgb(177, 59, 59);
+}
+.profile .btn-edit{
+    outline: none;
+    border: none;
+    border-radius: 200px;
+    background: transparent;
+}
+.profile .btn-edit:hover{
+    background: rgb(8, 65, 92);
+    color: white;
+}
+.profile .fas{
+    padding: 5px;
+}
+/* ============================================== RESPONSIVENESS(INDEX PAGE)=========================== */
+@media (max-width: 768px) {
+
+    .profile img{
+        width: 30%;
+    }
+    
+    .overall{
+        width: 100%;
+        display: inline-block;
+        margin-top: -55px;
+    }
+    .info h1{
+        font-size: 22pt;
+        padding: 0;
+    }
+    .info li{
+        font-size: 14pt;
+        list-style: none;
+        font-weight: 500;
+        padding: 2px;
+        text-align: center;
+        background: rgb(46, 14, 46);
+        color: antiquewhite;
+     }
+     
+    .info{
+       width: 100% !important;
+       padding-top: 30px;
+     }
+    .content{
+       width: 100%;
+       display: inline-block;
+    }
+    #modal-reset{
+    width: 80%;
+    left: 10%; 
+    }
+    #btn-staff-login, #btn-staff-in{
+        width: 80%;
+    }
+    .content{
+        margin-top: 10px;
+    }
+    #signin, #signup{
+        width: 100%;
+        top: 130px;
+        height: 45vh;
+        text-align: left;
+        position: relative;
+        top: 0;
+        border-radius: 8px;
+        padding-top: 5px;
+        box-shadow: none;
+    }
+
+    .content{
+        width: 100% !important;
+    }
+    #signup .form-group{
+        padding-bottom: 10px;
+        width: 100%;
+        float: left;
+        display: block;
+    }
+    #signup label{
+        padding-top: 10px;
+        padding-bottom: 0;
+        padding-left: 15px;
+        text-align: left;
+    }
+    
+    #signup .inp{
+        height: 30px;
+        text-align: center;
+        border: none;
+        border-bottom: 0.5px solid rgba(117, 156, 123, 0.7);
+        outline: none;
+        font-weight: 500;
+        font-size: 13pt;
+        width: 90%;
+        margin-right: 10px;
+    }
+  }
+  /* ============================================== CLIENT PAGE ======================== */
+  .client{
+      margin: 20px;
+      display: flex;
+      height: 75vh;
+  }
+  .aside{
+      height: 75vh;
+      flex: 1;
+      order: 1;
+      border: 1px solid rgba(109, 93, 93, 0.4);
+  }
+  .main{
+    flex: 5;
+    order: 2;
+    padding: 20px;
+    border: 1px solid rgba(109, 93, 93, 0.4);
+    overflow: auto;
+  }
+
+  .shade{
+      background: rgb(49, 6, 49);
+      color: white;
+      font-weight: 700;
+      width: 80%;
+      display: block;
+      height: 25px;
+      margin-left: 10%;
+      margin-top: 10px;
+  }
+.btn-default{
+    width: 95%;
+    height: 30px;
+    border: none;
+    font-weight: 700;
+    font-size: 12pt;
+    margin: 2px 0 2px 7px;
+    border-radius: 3px;
+    outline: none;
+    cursor: pointer;
+    text-align: left;
+    padding: 0px;
+}
+.btn-default:hover, .btn-simple:hover{
+    background: rgb(8, 65, 92);
+    color: white;
+}
+.dte{
+    float: right;
+}
+.dte label{
+    font-weight: 700;
+    padding: 0;
+    margin-left: 40%;
+    color:  rgb(8, 65, 92); 
+}
+.dte input{
+    font-weight: 700;
+    border: none;
+    padding: 4px 0 0 7px;
+    width: 30%;;
+    font-size: 12pt;
+    float: right;
+}
+#acctInfo{
+    display: block;
+    width: 80%;
+    margin: auto;
+}
+.btn-create{
+    outline: none;
+    position: inherit;
+    float: right;
+    margin: 10px;
+    cursor: pointer;
+    font-weight: 700;
+    height: 30px;
+}
+.inp2{
+    height: 30px;
+    border: none;
+    outline: none;
+    font-weight: 500;
+    font-size: 13pt;
+    flex: 1;
+    margin-right: 15px;
+}
+#acctInfo h3,
+#transfer h3,
+#transaction-history h3,
+#debit h3,
+#credit h3{
+    border-bottom: 1px solid rgba(109, 93, 93, 0.4);
+    background: rgb(46, 14, 46);
+    color: white;
+    text-align: center;
+    margin-bottom: 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 5px;
+}
+.thumb{
+    width: 40%;
+    margin: auto;
+    margin-top: 0;
+    border-radius: 200px;
+}
+/* -------------------------------------------- MODAL CREATE ACCOUNT --------------------------------- */
+#modal-account{
+    display: none;
+    margin: auto;
+    padding: 10px;
+    width: 35%;
+    /* height: 40vh; */
+    background: white;
+    position: fixed;
+    top: 21%;
+    left: 40%;
+    border-radius: 12px;
+    box-shadow: 2px 4px 10px 0 rgba(0, 0, 0, 0.4), 1px 3px 3px 0 rgba(0, 0, 0, 0.3);
+}
+#modal-account h1{
+    text-align: center;
+}
+.form-control{
+    width: 80%;
+    display: block;
+    margin: auto;
+}
+.ok{
+    color: green;
+}
+.lb{
+    width: 40%;
+    display: block;
+}
+.form-input{
+    width: 50%;
+    border: none;
+    outline: none;
+    font-weight: 700;
+    font-size: 13pt;
+    margin-left: 50px;
+    /* text-align: right; */
+}
+/* select{
+    display: block;
+    margin: 0 10px 30px;
+    width: 75%;
+    border: none;
+    outline: none;
+    font-weight: 700;
+    font-size: 13pt;
+    text-align: center;
+    margin: 2px;
+    margin-right: 50px;
+    margin-left: 50px;
+    margin-bottom: 20px;
+} */
+.mid{
+    width: 100%;
+    margin: auto;
+}
+.mi{
+    width: 65%;
+}
+.activate{
+    display: none;
+    margin-left: -150px;
+    transition: 3s;
+}
+.form-control{
+    margin-bottom: 30px;
+}
+.group-item{
+    width: 40%;
+}
+.group-item label{
+    display: block;
+    font-weight: 700;
+}
+.group-item select{
+    display: block;
+    margin-left: 10px;;
+}
+/* ------------------------------------------------ RESPONSIVENESS (CLIENT PAGE)-------------------------------- */
+@media(max-width: 768px){
+   .users{
+       left: 0% !important;
+       margin-left: 10px !important;
+       width: 70% !important;
+   }
+
+   .users h1{
+       font-size: 13pt !important;
+       margin-bottom: 40px !important;
+       margin-top: 50px;
+   }
+   .users .form-group{
+       margin-left: -50px !important;
+       margin-right: 10px;
+   }
+    #menu{
+        margin: 10px;
+        border: none;
+        transition: 3s;
+    }
+    #acctInfo .form-group label{
+        font-weight: 700;
+    }
+    #acctInfo .form-group .inp2{
+       display: block;
+        width: 100%;
+        text-align: center;
+        border-bottom: 1px solid rgb(94, 94, 94);
+    }
+    #menu-toggle{
+        display: block;
+    }
+  
+    #signin h1,
+    #signup h1,
+    #staff h1,
+    #modal-search h1,
+    #modal-reset h1,
+    #modal-add-user h1
+    #modal-account h1,
+    #modal-view-account h1{
+        font-size: 13pt;
+    }
+
+    #modal-reset,
+    #modal-view-account,
+    #modal-add-user{
+        margin-left: 0;
+    }
+    #modal-account{
+        margin-left: -40px;
+    }
+    #modal-search{
+        padding-left: 0 !important;
+        width: 80%;
+        left: -10px;
+    }
+    #modal-view-account{
+        padding-left: 0 !important;
+        width: 100% !important;
+        background: white;
+        position: absolute;
+        left: -10px;
+    }
+    .client{
+        display: block;
+    }
+
+    .client{
+        margin: 20px;
+        display: block;
+    }
+    .aside{
+        height: initial;;
+    }
+    .group{
+        width: 100%;
+        display: flex;
+    }
+    #search{
+        flex: 5;
+    }
+    .dv-double-btn{
+        width: 100%;
+        margin-right: 10px;
+    }
+    .btn{
+        width: 100% !important;
+    }
+    .btn-search{
+        margin-left: 7px;
+        height: 38px;
+        flex: 1;
+    }
+    #btn-search:hover,#btn-search-user:hover, .btn-search:hover{
+        background: rgb(122, 161, 122);
+        color: white;
+    }
+    .modal{
+        width: 70%;
+        margin-left: -30%;
+    }
+    #search, #search-account{
+        width: 70% !important;
+    }
+    .btn-search{
+        width: 20%;
+    }
+    #btn-create-user{
+        width: 95%;
+        margin-left: auto;
+    }    
+    /* ---------------------------------- TABLE  */
+    table{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    td:nth-child(even){
+        display: none;
+    }
+    td:nth-child(2){
+        display: none;
+    }
+    /* ----------------------------------------- */
+    .form-group{
+        display: block !important;
+        margin-bottom: 20px !important;
+    }
+    .form-group label{
+        float: left;
+        display: block;
+    }
+    .form-group .inp{
+        width: 100%;
+    }
+    .form-group .btn{
+        width: 80%;
+        margin-left: auto;
+    }
+    .profile{
+      text-align: center;
+      height: initial;  
+    }
+    /* .thumb{
+        width: 100%;
+    } */
+    .thumb img{
+        width: 40%;
+    }
+    .btn-simple{
+        width: 100%;
+        padding: 0px;
+        font-size: 12pt;
+        margin-left: -5% !important;
+        margin-bottom: 40px;
+    }
+    #acctInfo{
+        width: 100%;
+    }
+    .form-group{
+        padding-bottom: 10px;
+        display: flex;
+        margin: auto;
+    }
+    .shade{
+        width: 100%;
+        margin-left: -7px;
+        padding: 4px;
+    }
+    .inp2{
+        width: 50%;
+    }
+    /* -------------------------- TRANSFER */
+    #transfer{
+        display: none;
+        width: 100% !important;
+        /* margin: 0 !important; */
+    }
+    #btn-transfer{
+        width: 100% !important;
+        margin: 0 !important;
+    }
+    /* -----------------  RESPONSIVE CREATE ACCOUNT MODAL -----------*/
+    #modal-account{
+        width: 100%;
+        left: 10%;
+    }
+    .dv-double-btn{
+        width: 100% !important;
+        padding: 0 !important;
+    }
+    .dv-double-btn .btn-danger, .dv-double-btn .btn-success{
+        width: 40% !important;
+        margin: 10px !important;
+        
+    }
+
+    #debit, #credit{
+        width: 100% !important;
+    }
+    .txt{
+        display: block;
+        width: 90%;
+    }
+    .check, #check{
+        display: block;
+        width: 50%;
+        margin: 10px 0 0 20% !important;
+        padding: 5px;
+        text-align: center;
+        background: rgb(122, 161, 122);
+        color: white;
+        border-radius: 200px;
+        cursor: pointer !important;
+    
+    }
+    .check:hover{
+        background: rgb(31, 119, 31);
+        color: white;
+    }
+    .form-control{
+        width: 100%;
+        display: block;
+    }
+    #modal-account h1{
+        text-align: center;
+        font-size: 14pt;
+        margin-top: 30px;
+    }
+    select{
+        width: 90%;
+        margin: auto;
+    }
+    .btn{
+        width: 100%;
+        margin-top: 10px;
+    }
+    .error{
+        width: initial !important;
+    }
+}
+/* ======================================================= ADMIN PAGE =========================== */
+#display{
+    display: block;
+}
+#modal-users{
+  display: none;
+}
+.profile{
+    padding: 5px 0 10px 10px;
+    text-align: center;
+    height: 40vh;
+}
+#modal-add-user{
+    display: none;
+    margin: auto;
+    padding: 10px;
+    width: 35%;
+    background: white;
+    position: fixed;
+    top: 17%;
+    left: 30%;
+    border-radius: 12px;
+    box-shadow: 2px 4px 10px 0 rgba(0, 0, 0, 0.4), 1px 3px 3px 0 rgba(0, 0, 0, 0.3);
+}
+#search, #search-account{
+    font-weight: 700;
+    width: 30%;
+    height: 27px;
+    font-size: 15pt;
+    text-align: center;
+    padding: 4px;
+    outline: none;
+    border: 1px solid  rgba(8, 65, 92, 0.4);
+    margin-bottom: 20px;
+}
+#btn-search, #btn-search-user, .btn-search{
+    border: none;
+    height: 35px;
+    cursor: pointer;
+    outline: none;
+}
+#btn-search:hover,#btn-search-user:hover, .btn-search:hover{
+    background: rgb(122, 161, 122);
+    color: white;
+}
+
+table{
+    width: 100%;
+    margin-bottom: 20px;
+}
+table tr:hover{
+    background: white;
+    color: rgb(8, 65, 92);
+}
+table thead td{
+    background: rgb(8, 65, 92);
+    font-weight: 700;
+    font-size: 15pt;
+    color: whitesmoke;
+}
+#table-cashier thead td{
+    background: rgb(8, 75, 55);
+}
+tr{
+    background: rgb(221, 221, 220);
+    font-size: 14pt;
+}
+td{
+    padding: 7px;
+    font-size: 14pt;
+}
+#modal-search, #modal-view-account{
+    display: none;
+    padding-left: 40px;
+    background: white;
+    position: absolute;
+    top: 25%;
+    left: 40%;
+    border-radius: 12px;
+    box-shadow: 2px 4px 10px 0 rgba(0, 0, 0, 0.4), 1px 3px 3px 0 rgba(0, 0, 0, 0.3);
+}
+.btn-warn{
+    background: rgb(235, 238, 155);
+}
+.btn-warn:hover{
+    background: rgb(157, 158, 69);
+    color: rgb(255, 255, 255);
+}
+.btn-danger{
+    background: rgba(224, 13, 13, 0.7);
+}
+.btn-danger:hover{
+    background: rgba(224, 13, 13, 1);
+    color: rgb(255, 255, 255);
+}
+.btn-success{
+    background: rgba(83, 138, 69, 0.7); 
+}
+.btn-success:hover{
+    background: rgb(83, 138, 69); 
+    color: white;
+}
+#modal-add-user{
+    padding-left: 70px;
+}
+
+/* ========================================== TRANSFER =============================== */
+#transfer{
+    display: none;
+    width: 70%;
+    margin: auto;
+}
+#btn-transfer{
+    width: 20%;
+    margin: 0 0 0 80%;
+}
+#check, .check{
+    margin-left: 3px;
+}
+
+#check:hover, .check:hover{
+    background: rgb(122, 161, 122);
+    color: white;
+    border-radius: 200px;
+}
+.pad{
+    margin-left: 12px;
+}
+.padding-bottom{
+    margin-bottom: 0;
+}
+
+/* ============================================= TRANSACTION HISTTORY ========================== */
+#transaction-history{
+    display: none;
+}
+/* ============================================== DEBIT & CREDIT BANK ACCOUNT======================================== */
+#debit, #credit{
+    display: none;
+    width: 70%;
+    margin: auto;
+}
+.btn-lg{
+    width: 100%;
+}
+/* ========================================= SERVER MESSAGE ================================================= */
+
+.error{
+   display: none;
+}
+.warning{
+    width: 100%;
+    background: rgba(196, 195, 195, 0.2);
+    border-radius: 12px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    color: rgb(175, 2, 2);
+    font-size: 14pt;
+    font-weight: 700;
+    text-align: center;    
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.error-toggle{
+    opacity: 0;
+    transition: opacity 2s ease-out 1s;
+}
+.success{
+    background: rgb(73, 151, 73);
+    height: 12px;
+    font-size: 12pt;
+    color: white;
+}
+
+.choose{
+    margin-left: 30px;
+}
