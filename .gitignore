@@ -1,9 +1,11 @@
 #### Generated directories
 node_modules
+build
 
 #### Hidden files
 .env
- .DS_Store
+.DS_Store
+.editorconfig
 
 #### lock files
 package-lock.json

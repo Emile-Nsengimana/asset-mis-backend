@@ -5,12 +5,11 @@ import App from './App.jsx';
 import './assets/css/index.css';
 import '../node_modules/bootstrap/dist/css/bootstrap.css';
 import store from './redux/store/index';
-
-
+import "@babel/polyfill";
 
 render(
     <Provider store={store}>
         <App />
-    </Provider>, 
+    </Provider>,
     document.getElementById('root')
 );

@@ -1,16 +1,6 @@
-const initialState = {
-    users: [],
-    accounts: [],
-};
+import { combineReducers } from 'redux';
+import accountsReducer from './accountsReducer';
 
-const rootReducer = (state = initialState, action) => {
-    
-    switch(action.type){
-        case 'ADD_USER':
-            return Object.assign({}, state, { users: state.users.concat(action.payload)});
-        default:
-            return state; 
-    }
-}
-
-export default rootReducer;
+export default combineReducers({
+  accounts: accountsReducer
+})

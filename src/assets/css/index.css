@@ -46,7 +46,7 @@ button{
     display: none;
     margin: 30px -75px 30px 30px;
     float: left;
-    border-radius: 100px; 
+    border-radius: 100px;
     padding: 10px;
     width:30px;
     background: rgba(8, 65, 92, 0.7);
@@ -373,7 +373,7 @@ button{
     .profile img{
         width: 30%;
     }
-    
+
     .overall{
         width: 100%;
         display: inline-block;
@@ -392,7 +392,7 @@ button{
         background: rgb(46, 14, 46);
         color: antiquewhite;
      }
-     
+
     .info{
        width: 100% !important;
        padding-top: 30px;
@@ -403,7 +403,7 @@ button{
     }
     #modal-reset{
     width: 80%;
-    left: 10%; 
+    left: 10%;
     }
     #btn-staff-login, #btn-staff-in{
         width: 80%;
@@ -438,7 +438,7 @@ button{
         padding-left: 15px;
         text-align: left;
     }
-    
+
     #signup .inp{
         height: 30px;
         text-align: center;
@@ -505,7 +505,7 @@ button{
     font-weight: 700;
     padding: 0;
     margin-left: 40%;
-    color:  rgb(8, 65, 92); 
+    color:  rgb(8, 65, 92);
 }
 .dte input{
     font-weight: 700;
@@ -519,6 +519,7 @@ button{
     display: block;
     width: 80%;
     margin: auto;
+    margin-top: 20px;
 }
 .btn-create{
     outline: none;
@@ -670,7 +671,7 @@ button{
     #menu-toggle{
         display: block;
     }
-  
+
     #signin h1,
     #signup h1,
     #staff h1,
@@ -749,7 +750,7 @@ button{
     #btn-create-user{
         width: 95%;
         margin-left: auto;
-    }    
+    }
     /* ---------------------------------- TABLE  */
     table{
         width: 100%;
@@ -779,7 +780,7 @@ button{
     }
     .profile{
       text-align: center;
-      height: initial;  
+      height: initial;
     }
     /* .thumb{
         width: 100%;
@@ -832,7 +833,7 @@ button{
     .dv-double-btn .btn-danger, .dv-double-btn .btn-success{
         width: 40% !important;
         margin: 10px !important;
-        
+
     }
 
     #debit, #credit{
@@ -852,7 +853,7 @@ button{
         color: white;
         border-radius: 200px;
         cursor: pointer !important;
-    
+
     }
     .check:hover{
         background: rgb(31, 119, 31);
@@ -975,10 +976,10 @@ td{
     color: rgb(255, 255, 255);
 }
 .btn-success{
-    background: rgba(83, 138, 69, 0.7); 
+    background: rgba(83, 138, 69, 0.7);
 }
 .btn-success:hover{
-    background: rgb(83, 138, 69); 
+    background: rgb(83, 138, 69);
     color: white;
 }
 #modal-add-user{
@@ -1038,7 +1039,7 @@ td{
     color: rgb(175, 2, 2);
     font-size: 14pt;
     font-weight: 700;
-    text-align: center;    
+    text-align: center;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
@@ -1055,4 +1056,29 @@ td{
 
 .choose{
     margin-left: 30px;
+}
+
+.top-header{
+    text-align: center;
+    color: rgb(15, 50, 90);
+    font-weight: 700;
+    background: whitesmoke;
+    text-transform: uppercase;
+}
+
+.fa-trash-alt{
+  padding: 0px;
+  background: transparent;
+  outline: none;
+  color: rgba(214, 11, 11, 1);
+}
+
+#lb-msg{
+  display: none;
+  background: rgba(78, 124, 9, 0.466);
+  width: 70%;
+  margin: auto;
+  padding: 7px;
+  font-weight: 700;
+  color: rgb(15, 50, 90);
 }
